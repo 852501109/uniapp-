@@ -1,0 +1,431 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+		"^c-(.*)": "@/custom/components/c-$1/c-$1.vue" // 匹配自定义的组件位置
+	},
+
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+      {
+      	"path": "pages/login/login",
+      	"style": {
+      		"navigationStyle": "custom",
+      		"enablePullDownRefresh": true,
+      		"navigationBarTitleText": "登录"
+      	}
+
+      },
+      {
+			"path": "pages/home/home",
+			"style":
+      {
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "乐易生活"
+			}
+
+		},
+		{
+			"path" : "pages/develop/develop",
+			"style" :
+			{
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "开发页面"
+			}
+
+		},
+
+		{
+			"path": "pages/mine/bank/bankInfo",
+			"style": {
+				"navigationBarTitleText": "卡片详情",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+
+		},
+
+		/* {
+			"path": "pages/login/login",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "登录"
+			}
+
+		}, */
+
+		{
+			"path": "pages/login/register",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "注册"
+			}
+
+		},
+
+		{
+			"path": "pages/login/results",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "实名认证"
+			}
+
+		},
+		{
+			"path": "pages/login/certification",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "实名认证"
+			}
+		},
+		{
+			"path": "pages/login/forgetPassword",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "修改密码"
+			}
+
+		},
+
+		{
+			"path": "pages/home/fastPayment",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "快捷支付"
+			}
+
+		},
+		{
+			"path": "pages/home/dealInfo",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "交易详情"
+			}
+
+		},
+		{
+			"path": "pages/home/paymentTrue",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "支付结果"
+			}
+
+		},
+		{
+			"path": "pages/home/tradingRecord",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "交易记录"
+			}
+
+		},
+		{
+			"path": "pages/home/addCashCard",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "添加储蓄卡"
+			}
+
+		},
+		{
+			"path": "pages/home/changeAisle",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "通道选择"
+			}
+
+		},
+		{
+			"path": "pages/home/addCreditCard",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "添加信用卡"
+			}
+
+		},
+		{
+			"path": "pages/classRoom/classRoom",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "课堂"
+			}
+
+		},
+		{
+			"path": "pages/classRoom/videoTeaching",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "视频教学"
+			}
+
+		},
+		{
+			"path": "pages/classRoom/selectedCourse",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "精选课程"
+			}
+
+		},
+		{
+			"path": "pages/home/popularRecommendation",
+			"style": {
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "人气推荐"
+			}
+
+		},
+		{
+			"path": "pages/home/bankSelectList",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "银行选择列表"
+			}
+
+		},
+		{
+			"path": "pages/share/share",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "分享"
+			}
+
+		}, {
+			"path": "pages/mine/mine",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "我的"
+			}
+
+		}, {
+			"path": "pages/mine/wallet/wallet",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "我的钱包"
+			}
+
+		},
+		{
+			"path": "pages/mine/wallet/withdraw",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "申请提现"
+			}
+		},
+		{
+			"path": "pages/mine/wallet/redEnvelope",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "红包"
+			}
+
+		},
+		{
+			"path": "pages/mine/wallet/feeSplitting",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "分润"
+			}
+
+		},
+		{
+			"path": "pages/mine/wallet/award",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "奖励"
+			}
+
+		},
+		{
+			"path": "pages/mine/bank/bank",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "卡片管理"
+			}
+		},
+		{
+			"path": "pages/team/team",
+			"style": {
+				"navigationBarTitleText": "团队管理",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+
+		}, {
+			"path": "pages/team/teamUserInfo",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "用户详情",
+				"enablePullDownRefresh": true
+			}
+
+		},
+		{
+			"path": "pages/mine/income/income",
+			"style": {
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"navigationBarTitleText": "收入记录"
+			}
+
+		},
+		{
+			"path": "pages/mine/income/incomeInfo",
+			"style": {
+				"navigationBarTitleText": "收入详情",
+				"enablePullDownRefresh": true,
+				"navigationStyle": "custom"
+			}
+
+
+		}, {
+			"path": "pages/mine/certification/certification",
+			"style": {
+				"enablePullDownRefresh": false,
+				"navigationBarTitleText": "实名认证"
+			}
+		}, {
+			"path": "custom/components/c-swiper/c-swiper",
+			"style": {
+				"navigationBarTitleText": "",
+				"enablePullDownRefresh": false
+			}
+
+		}, {
+			"path": "pages/mine/setting/setting",
+			"style": {
+				"navigationBarTitleText": "设置",
+				"enablePullDownRefresh": false
+			}
+
+		},
+		{
+			"path": "pages/mine/setting/changeAccount",
+			"style": {
+				"navigationBarTitleText": "更换账号",
+				"enablePullDownRefresh": false
+			}
+
+		},
+    {
+    	"path": "pages/message/message",
+    	"style": {
+    		"navigationBarTitleText": "消息",
+    		"enablePullDownRefresh": false
+    	}
+
+    },
+    {
+    	"path": "pages/mine/rightsUpgrading/rightsUpgrading",
+    	"style": {
+    		"navigationBarTitleText": "权益升级",
+    		"enablePullDownRefresh": false
+    	}
+
+    },
+    {
+    	"path": "pages/share/ruleDescription",
+    	"style": {
+    		"navigationBarTitleText": "规则说明",
+    		"enablePullDownRefresh": false
+    	}
+
+    },
+    {
+    	"path": "pages/mine/gradeDescription/gradeDescription",
+    	"style": {
+    		"navigationBarTitleText": "等级说明",
+    		"enablePullDownRefresh": false
+    	}
+
+    },
+    {
+    	"path": "pages/classRoom/courseDetails",
+    	"style": {
+    		"navigationBarTitleText": "隐私协议",
+    		"enablePullDownRefresh": false
+    	}
+
+    }
+	    ,{
+            "path" : "pages/login/userAgreement",
+            "style" :
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+
+        },
+     {
+        "path" : "pages/mine/bank/creditCardInfo",
+        "style" :
+        {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+        }
+
+      }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "乐易生活",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"scrollIndicator": "none",
+		"app-plus": {
+			"scrollIndicator": "none" //全局 在APP页面都不显示滚动条
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"iconPath": "static/i1.png",
+				"selectedIconPath": "static/home_icon_activ2xe.png",
+				"text": "主页"
+			},
+			{
+				"pagePath": "pages/classRoom/classRoom",
+				"iconPath": "static/home_ketang_2x.png",
+				"selectedIconPath": "static/home_ketang_2x.png",
+				"text": "课堂"
+			},
+			{
+				"pagePath": "pages/share/share",
+				"iconPath": "static/home_fenxiang_2x.png",
+				"selectedIconPath": "static/home_fenxiang_2x.png",
+				"text": "分享"
+			},
+			{
+				"pagePath": "pages/mine/mine",
+				"iconPath": "static/home_wode_2.png",
+				"selectedIconPath": "static/a3.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}
